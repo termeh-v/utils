@@ -1,0 +1,51 @@
+{
+    "type": "module",
+    "license": "ISC",
+    "version": "1.0.0",
+    "name": "@termeh-v/utils",
+    "description": "Utility functions for DOM, HTTP, and common browser operations.",
+    "sideEffects": false,
+    "module": "./dist/utils.es.js",
+    "main": "./dist/utils.cjs.js",
+    "types": "./dist/utils.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/utils.es.js",
+            "require": "./dist/utils.cjs.js",
+            "types": "./dist/utils.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/termeh-v/utils.git"
+    },
+    "author": {
+        "name": "Mojtaba Ekramy",
+        "email": "m.ajamekramy@gmail.com",
+        "url": "https://github.com/mekramy"
+    },
+    "keywords": [
+        "utils",
+        "utility",
+        "helper"
+    ],
+    "scripts": {
+        "test": "vitest",
+        "build": "vite build",
+        "prepare": "npm run build"
+    },
+    "devDependencies": {
+        "@types/node": "^24.5.2",
+        "typescript": "^5.9.2",
+        "vite": "^7.1.7",
+        "vite-plugin-dts": "^4.5.4",
+        "vitest": "^3.2.4"
+    },
+    "peerDependencies": {
+        "@types/moment-jalaali": "^0.7.9",
+        "moment-jalaali": "^0.10.4"
+    }
+}
